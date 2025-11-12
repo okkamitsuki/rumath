@@ -5,53 +5,53 @@
 extern "C" {
 #endif
 
-typedef struct rum_vector2 {
-    float x;
-    float y;
-} rum_vector2;
+    typedef struct rum_vector2 {
+        float x;
+        float y;
+    } rum_vector2;
 
-rum_vector2 rum_vector2_create(float x, float y);
-rum_vector2 rum_vector2_zero(void);
-rum_vector2 rum_vector2_one(void);
+    rum_vector2 rum_vector2_create(float x, float y);
+    rum_vector2 rum_vector2_zero(void);
+    rum_vector2 rum_vector2_one(void);
 
-rum_vector2 rum_vector2_add(const rum_vector2* a, const rum_vector2* b);
-rum_vector2 rum_vector2_sub(const rum_vector2* a, const rum_vector2* b);
-rum_vector2 rum_vector2_mul(const rum_vector2* a, const rum_vector2* b);
-rum_vector2 rum_vector2_div(const rum_vector2* a, const rum_vector2* b);
-rum_vector2 rum_vector2_scale(const rum_vector2* a, float scalar);
+    rum_vector2 rum_vector2_add(const rum_vector2* a, const rum_vector2* b);
+    rum_vector2 rum_vector2_sub(const rum_vector2* a, const rum_vector2* b);
+    rum_vector2 rum_vector2_mul(const rum_vector2* a, const rum_vector2* b);
+    rum_vector2 rum_vector2_div(const rum_vector2* a, const rum_vector2* b);
+    rum_vector2 rum_vector2_scale(const rum_vector2* a, float scalar);
 
-typedef struct rum_vector3 {
-    float x;
-    float y;
-    float z;
-} rum_vector3;
+    typedef struct rum_vector3 {
+        float x;
+        float y;
+        float z;
+    } rum_vector3;
 
-rum_vector3 rum_vector3_create(float x, float y, float z);
-rum_vector3 rum_vector3_zero(void);
-rum_vector3 rum_vector3_one(void);
+    rum_vector3 rum_vector3_create(float x, float y, float z);
+    rum_vector3 rum_vector3_zero(void);
+    rum_vector3 rum_vector3_one(void);
 
-rum_vector3 rum_vector3_add(const rum_vector3* a, const rum_vector3* b);
-rum_vector3 rum_vector3_sub(const rum_vector3* a, const rum_vector3* b);
-rum_vector3 rum_vector3_mul(const rum_vector3* a, const rum_vector3* b);
-rum_vector3 rum_vector3_div(const rum_vector3* a, const rum_vector3* b);
-rum_vector3 rum_vector3_scale(const rum_vector3* a, float scalar);
+    rum_vector3 rum_vector3_add(const rum_vector3* a, const rum_vector3* b);
+    rum_vector3 rum_vector3_sub(const rum_vector3* a, const rum_vector3* b);
+    rum_vector3 rum_vector3_mul(const rum_vector3* a, const rum_vector3* b);
+    rum_vector3 rum_vector3_div(const rum_vector3* a, const rum_vector3* b);
+    rum_vector3 rum_vector3_scale(const rum_vector3* a, float scalar);
 
-typedef struct rum_vector4 {
-    float x;
-    float y;
-    float z;
-    float w;
-} rum_vector4;
+    typedef struct rum_vector4 {
+        float x;
+        float y;
+        float z;
+        float w;
+    } rum_vector4;
 
-rum_vector4 rum_vector4_create(float x, float y, float z, float w);
-rum_vector4 rum_vector4_zero(void);
-rum_vector4 rum_vector4_one(void);
+    rum_vector4 rum_vector4_create(float x, float y, float z, float w);
+    rum_vector4 rum_vector4_zero(void);
+    rum_vector4 rum_vector4_one(void);
 
-rum_vector4 rum_vector4_add(const rum_vector4* a, const rum_vector4* b);
-rum_vector4 rum_vector4_sub(const rum_vector4* a, const rum_vector4* b);
-rum_vector4 rum_vector4_mul(const rum_vector4* a, const rum_vector4* b);
-rum_vector4 rum_vector4_div(const rum_vector4* a, const rum_vector4* b);
-rum_vector4 rum_vector4_scale(const rum_vector4* a, float scalar);
+    rum_vector4 rum_vector4_add(const rum_vector4* a, const rum_vector4* b);
+    rum_vector4 rum_vector4_sub(const rum_vector4* a, const rum_vector4* b);
+    rum_vector4 rum_vector4_mul(const rum_vector4* a, const rum_vector4* b);
+    rum_vector4 rum_vector4_div(const rum_vector4* a, const rum_vector4* b);
+    rum_vector4 rum_vector4_scale(const rum_vector4* a, float scalar);
 
 #ifdef  __cplusplus
 }
