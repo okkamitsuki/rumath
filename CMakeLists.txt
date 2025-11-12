@@ -8,11 +8,12 @@ set(SRC_DIR ${ROOT_DIR}/src)
 set(INCLUDE_DIR ${ROOT_DIR}/include)
 
 add_library(rumath STATIC
-            ${SRC_DIR}/matrix.c
-            ${SRC_DIR}/vector.c
-            ${SRC_DIR}/math.c
-            ${SRC_DIR}/projection.c
-            ${SRC_DIR}/vector_extension.c
+        ${SRC_DIR}/matrix.c
+        ${SRC_DIR}/vector.c
+        ${SRC_DIR}/vector_extension.c
+        ${SRC_DIR}/quaternion.c
+        ${SRC_DIR}/math.c
+        ${SRC_DIR}/projection.c
 )
 
 target_include_directories(rumath PUBLIC ${INCLUDE_DIR})
