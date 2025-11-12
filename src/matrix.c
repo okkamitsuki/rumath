@@ -36,7 +36,7 @@ rum_matrix2x2 rum_matrix2x2_add(const rum_matrix2x2* a, const rum_matrix2x2* b) 
 // rum_matrix2x2 - rum_matrix2x2
 // {a00 - b00, a01 - b01}
 // {a10 - b10, a11 - b11}
-rum_matrix2x2 rum_matrix2x2_subtract(const rum_matrix2x2* a, const rum_matrix2x2* b) {
+rum_matrix2x2 rum_matrix2x2_sub(const rum_matrix2x2* a, const rum_matrix2x2* b) {
     rum_matrix2x2 result;
     result.data[0][0] = a->data[0][0] - b->data[0][0];
     result.data[0][1] = a->data[0][1] - b->data[0][1];
@@ -49,7 +49,7 @@ rum_matrix2x2 rum_matrix2x2_subtract(const rum_matrix2x2* a, const rum_matrix2x2
 // rum_matrix2x2 * rum_matrix2x2
 // {a00*b00 + a01*b10, a00*b01 + a01*b11}
 // {a10*b00 + a11*b10, a10*b01 + a11*b11}
-rum_matrix2x2 rum_matrix2x2_multiply(const rum_matrix2x2* a, const rum_matrix2x2* b) {
+rum_matrix2x2 rum_matrix2x2_mul(const rum_matrix2x2* a, const rum_matrix2x2* b) {
     rum_matrix2x2 result;
     result.data[0][0] = a->data[0][0]*b->data[0][0] + a->data[0][1]*b->data[1][0];
     result.data[0][1] = a->data[0][0]*b->data[0][1] + a->data[0][1]*b->data[1][1];
@@ -118,7 +118,7 @@ rum_matrix3x3 rum_matrix3x3_add(const rum_matrix3x3* a, const rum_matrix3x3* b) 
 // {a00 - b00, a01 - b01, a02 - b02}
 // {a10 - b10, a11 - b11, a12 - b12}
 // {a20 - b20, a21 - b21, a22 - b22}
-rum_matrix3x3 rum_matrix3x3_subtract(const rum_matrix3x3* a, const rum_matrix3x3* b) {
+rum_matrix3x3 rum_matrix3x3_sub(const rum_matrix3x3* a, const rum_matrix3x3* b) {
     rum_matrix3x3 result;
     result.data[0][0] = a->data[0][0] - b->data[0][0];
     result.data[0][1] = a->data[0][1] - b->data[0][1];
@@ -150,7 +150,7 @@ rum_matrix3x3 rum_matrix3x3_subtract(const rum_matrix3x3* a, const rum_matrix3x3
 //   a20*b01 + a21*b11 + a22*b21,
 //   a20*b02 + a21*b12 + a22*b22
 // }
-rum_matrix3x3 rum_matrix3x3_multiply(const rum_matrix3x3* a, const rum_matrix3x3* b) {
+rum_matrix3x3 rum_matrix3x3_mul(const rum_matrix3x3* a, const rum_matrix3x3* b) {
     rum_matrix3x3 result;
     // Row 0
     result.data[0][0] = a->data[0][0]*b->data[0][0] + a->data[0][1]*b->data[1][0] + a->data[0][2]*b->data[2][0];
@@ -250,7 +250,7 @@ rum_matrix4x4 rum_matrix4x4_add(const rum_matrix4x4* a, const rum_matrix4x4* b) 
 // {a10 - b10, a11 - b11, a12 - b12, a13 - b13}
 // {a20 - b20, a21 - b21, a22 - b22, a23 - b23}
 // {a30 - b30, a31 - b31, a32 - b32, a33 - b33}
-rum_matrix4x4 rum_matrix4x4_subtract(const rum_matrix4x4* a, const rum_matrix4x4* b) {
+rum_matrix4x4 rum_matrix4x4_sub(const rum_matrix4x4* a, const rum_matrix4x4* b) {
     rum_matrix4x4 result;
     result.data[0][0] = a->data[0][0] - b->data[0][0];
     result.data[0][1] = a->data[0][1] - b->data[0][1];
@@ -300,7 +300,7 @@ rum_matrix4x4 rum_matrix4x4_subtract(const rum_matrix4x4* a, const rum_matrix4x4
 //   a30*b02 + a31*b12 + a32*b22 + a33*b32,
 //   a30*b03 + a31*b13 + a32*b23 + a33*b33
 // }
-rum_matrix4x4 rum_matrix4x4_multiply(const rum_matrix4x4* a, const rum_matrix4x4* b) {
+rum_matrix4x4 rum_matrix4x4_mul(const rum_matrix4x4* a, const rum_matrix4x4* b) {
     rum_matrix4x4 result;
 
     // Row 0
