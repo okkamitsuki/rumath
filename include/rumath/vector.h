@@ -1,6 +1,10 @@
 ﻿#ifndef RUMATH_VECTOR_H
 #define RUMATH_VECTOR_H
 
+#ifdef  __cplusplus
+extern "C" {
+#endif
+
 typedef struct rum_vector2 {
     float x;
     float y;
@@ -48,5 +52,9 @@ rum_vector4 rum_vector4_subtract(const rum_vector4* a, const rum_vector4* b);
 rum_vector4 rum_vector4_multiply(const rum_vector4* a, const rum_vector4* b);
 rum_vector4 rum_vector4_divide(const rum_vector4* a, const rum_vector4* b);
 rum_vector4 rum_vector4_scale(const rum_vector4* a, float scalar);
+
+#ifdef  __cplusplus
+}
+#endif
 
 #endif //RUMATH_VECTOR_H

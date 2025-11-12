@@ -1,6 +1,10 @@
 #ifndef RUMATH_MATRIX4X4_H
 #define RUMATH_MATRIX4X4_H
 
+#ifdef  __cplusplus
+extern "C" {
+#endif
+
 typedef struct rum_matrix2x2 {
     float data[2][2];
 } rum_matrix2x2;
@@ -37,6 +41,10 @@ rum_matrix4x4 rum_matrix4x4_add(const rum_matrix4x4* a, const rum_matrix4x4* b);
 rum_matrix4x4 rum_matrix4x4_subtract(const rum_matrix4x4* a, const rum_matrix4x4* b);
 rum_matrix4x4 rum_matrix4x4_multiply(const rum_matrix4x4* a, const rum_matrix4x4* b);
 rum_matrix4x4 rum_matrix4x4_scale(const rum_matrix4x4* a, float scalar);
+
+#ifdef  __cplusplus
+}
+#endif
 
 
 #endif //RUMATH_MATRIX4X4_H
