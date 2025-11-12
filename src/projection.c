@@ -17,7 +17,7 @@ rum_matrix4x4 rum_perspective_opengl(float fov_radians, float aspect_ratio, floa
     return result;
 }
 
-rum_matrix4x4 rum_orthographic(float left, float right,float bottom, float top, float near_plane, float far_plane) {
+rum_matrix4x4 rum_orthographic_opengl(float left, float right,float bottom, float top, float near_plane, float far_plane) {
     rum_matrix4x4 result = rum_matrix4x4_identity();
 
     result.data[0][0] = 2.0f / (right - left);
