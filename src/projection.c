@@ -1,5 +1,5 @@
 ﻿#include <rumath/projection.h>
-#include <rumath/math.h>
+#include <../include/rumath/core/math.h>
 
 rum_matrix4x4 rum_perspective_opengl(float fov_radians, float aspect_ratio, float near_plane, float far_plane) {
     rum_matrix4x4 result = rum_matrix4x4_zero();

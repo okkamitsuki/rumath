@@ -1,4 +1,4 @@
-﻿#include <rumath/math.h>
+﻿#include <../include/rumath/core/math.h>
 
 float rum_sqrt(float x) {
     if (x <= 0.0f) return 0.0f;
