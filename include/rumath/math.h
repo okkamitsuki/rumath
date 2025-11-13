@@ -20,6 +20,8 @@ extern "C" {
     float rum_radians(float degrees);
     float rum_degrees(float radians);
 
+    float rum_clamp(float x, float min, float max);
+
 #ifdef  __cplusplus
 }
 #endif

@@ -63,3 +63,7 @@ float rum_radians(float degrees) {
 float rum_degrees(float radians) {
     return radians * 180.0f / RUM_PI;
 }
+
+float rum_clamp(float x, float min, float max) {
+    return (x < min) ? min : (x > max) ? max : x;
+}
